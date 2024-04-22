@@ -30,7 +30,7 @@ return {
         "stylua",
         "prettier",
         "gofumpt",
-        "goimports-reviser",
+        "goimports",
         "golines",
         "google-java-format",
       },

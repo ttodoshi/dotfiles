@@ -8,7 +8,7 @@ local options = {
     markdown = { "prettier" },
     graphql = { "prettier" },
     java = { "google-java-format" },
-    go = { "gofumpt", "goimports-reviser", "golines" },
+    go = { "gofumpt", "goimports", "golines" },
   },
 
   format_on_save = {
