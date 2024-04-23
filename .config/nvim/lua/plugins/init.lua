@@ -61,7 +61,10 @@ return {
       "nvim-treesitter/nvim-treesitter",
     },
     config = function()
-      require("go").setup()
+      require("go").setup {
+        tag_transform = "camelcase", -- "snakecase"
+        icons = { breakpoint = "🔴", currentpos = "➡️" },
+      }
     end,
     event = { "CmdlineEnter" },
     ft = { "go", "gomod" },
