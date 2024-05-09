@@ -1,0 +1,121 @@
+* {
+	font-family: JetBrainsMono, SymbolsNerdFont;
+	font-weight: bold;
+	font-size: 14px;
+	min-height: 0px;
+}
+
+@import "theme.css";
+
+window#waybar {
+	background-color: @bg;
+	transition-property: background-color;
+	transition-duration: .5s;
+	border-radius: 5px;
+}
+
+#pulseaudio {
+	background: @block;
+	color: @fg;
+	padding: 0px 10px 0px 15px;
+	margin: 4px 0px 4px 10px;
+	border-radius: 6px 0px 0px 6px;
+}
+
+#memory {
+	background: @block;
+	color: @fg;
+	padding: 0px 10px 0px 15px;
+	margin: 4px 0px 4px 0px;
+	/* border-radius: 6px 0px 0px 6px; */
+}
+
+#network {
+	background: @block;
+	color: @fg;
+	padding: 0px 15px 0px 10px;
+	margin: 4px 0px 4px 0px;
+	border-radius: 0px 6px 6px 0px;
+}
+
+#workspaces {
+	background-color: @block;
+	margin: 4px 5px 4px 5px;
+	border-radius: 6px;
+}
+#workspaces button {
+	background-color: @block;
+	color: @fg;	
+	padding: 0px 4px;
+	margin: 2px 5px 0px 5px;
+	border-bottom: solid 2px #23252e;
+	border-radius: 0px;
+}
+#workspaces button:hover {
+	background-color: @block;
+	color: @fg;	
+	padding: 0px 4px;
+	margin: 2px 5px 0px 5px;
+	border-bottom: solid 2px @fg;
+	border-radius: 0px;
+}
+#workspaces button.active {
+	background-color: @block;
+	color: @hover;
+	padding: 0px 4px;
+	margin: 2px 5px 0px 5px;
+	border-bottom: solid 2px;
+	border-radius: 0px;
+}
+#workspaces button.empty {
+	color: @item;
+	padding: 0px 4px;
+	margin: 2px 5px 0px 5px;
+	border-bottom: solid 2px #23252e;
+	border-radius: 0px;
+}
+
+
+#tray {
+	background: @block;
+	color: @fg;
+	padding: 0px 10px 0px 10px;
+	margin: 4px 4px 4px 4px;
+	border-radius: 6px 6px 6px 6px;
+}
+
+#custom-notifications {
+	background: @block;
+	color: @fg;
+	padding: 0px 10px 0px 20px;
+	margin: 4px 0px 4px 4px;
+	border-radius: 6px 0px 0px 6px;
+	font-size: 20px;
+}
+
+#language {
+	background: @block;
+	color: @hover;
+	padding: 0px;
+	margin: 4px 0px 4px 0px;
+	border-bottom: solid 2px @hover;
+	border-radius: 0px;
+}
+
+#clock {
+	background: @block;
+	color: @fg;
+	padding: 0px 15px 0px 20px;
+	margin: 4px 0px 4px 0px;
+	border-radius: 0px 6px 6px 0px;
+	font-size: 14px;
+}
+
+#custom-exit {
+	background: @block;
+	color: @fg;
+	padding: 0px 8px 0px 10px;
+	margin: 4px 4px 4px 4px;
+	border-radius: 6px 6px 6px 6px;
+	font-size: 14px;
+}

@@ -1,0 +1,126 @@
+{
+	"position": "top",
+	"height": 27,
+	"width": 1200,
+	"spacing": 0,
+	"margin-top": 5,
+	"modules-left": [
+		"pulseaudio",
+		"memory",
+		"network"
+	],
+	"modules-center": [
+		"hyprland/workspaces"
+		// "custom/term"
+	],
+	"modules-right": [
+		"tray",
+		"custom/notifications",
+		// "battery",
+		"hyprland/language",
+		"clock",
+		"custom/exit"
+	],
+	"memory": {
+		"interval": 10,
+		"format": "MEM: {percentage}%"
+	},
+	"network": {
+		"on-click": "nm-connection-editor",
+		/* "on-click: "nm-applet", */
+		"interval": 3,
+		"format": "{ifname}",
+		"format-wifi": "{icon}   {bandwidthDownBytes}   {bandwidthUpBytes} ",
+		"format-ethernet": "  {bandwidthDownBytes}   {bandwidthUpBytes} ",
+		"format-disconnected": "󰌙",
+		"tooltip-format": "{ipaddr}",
+		"format-linked": "󰈁 {ifname} (No IP)",
+		"tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
+		"tooltip-format-ethernet": "{ifname} 󰌘",
+		"tooltip-format-disconnected": "󰌙 Disconnected",
+		"max-length": 30,
+		"format-icons": [
+			"󰤯",
+			"󰤟",
+			"󰤢",
+			"󰤥",
+			"󰤨"
+		]
+	},
+	/* "battery": {
+		"bat": "BAT0",
+		"stages": {
+			"good": 95,
+			"warning": 30,
+			"critical": 5
+		},
+		"format": "BAT0: {capacity}%",
+		"format-charging": "BAT0: {capacity}% (charging)",
+		"format-plugged": "BAT0: {capacity}% (plugged)"
+	}, */
+	/* "custom/term": {
+		"format": "",
+		"on-click": "exec kitty",
+		"tooltip": false
+	}, */
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"on-click": "activate",
+		"format-icons": {
+			"1": "󰫍",
+			"2": "󰫍",
+			"3": "󰫍",
+			"4": "󰫍",
+			"5": "󰫍",
+			"6": "󰫍",
+			"7": "󰫍",
+			"8": "󰫍",
+			"9": "󰫍",
+			"10": "󰫍"
+		},
+		"tooltip": false,
+		"persistent-workspaces": {
+			"*": 6
+		}
+	},
+	"tray": {
+		"icon-size": 14,
+		"spacing": 15
+	},
+	"custom/notifications": {
+		"format": "󰎟 ",
+		"tooltip-format": "Notifications",
+		"on-click": "makoctl history | jq -r '.data[][] | .summary.data + \" \" + .body.data' | wofi --dmenu"
+	},
+	"pulseaudio": {
+		"scroll-step": 5,
+		"format": "{icon} {volume}% {format_source}",
+		"format-source": " {volume}%",
+		"format-source-muted": " {volume}%",
+		"format-icons": {
+			"default": [
+				" ",
+				" ",
+				"  "
+			]
+		},
+		"max-volume": 100,
+		"on-click": "pavucontrol"
+	},
+	"hyprland/language": {
+		"format": "{}",
+		"format-en": "EN",
+		"format-ru": "RU"
+	},
+	"clock": {
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"format": "{:%B %d %H:%M}",
+		"format-alt": "{:%A, %B %d, %Y (%R)}"
+	},
+	"custom/exit": {
+		"format": " ",
+		"tooltip": false,
+		"on-click": "wlogout"
+	},
+	"escape": true,
+}
