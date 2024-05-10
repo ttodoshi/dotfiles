@@ -12,6 +12,7 @@ M.ui = {
   tabufline = {
     order = { "treeOffset", "buffers", "tabs" },
   },
+  transparency = true
 
   -- hl_override = {
   -- 	Comment = { italic = true },

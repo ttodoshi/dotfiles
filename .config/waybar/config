@@ -40,11 +40,11 @@
 		"tooltip-format-disconnected": "󰌙 Disconnected",
 		"max-length": 30,
 		"format-icons": [
-			"󰤯",
-			"󰤟",
-			"󰤢",
-			"󰤥",
-			"󰤨"
+			"󰤯 ",
+			"󰤟 ",
+			"󰤢 ",
+			"󰤥 ",
+			"󰤨 "
 		]
 	},
 	/* "battery": {
