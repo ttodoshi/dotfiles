@@ -63,7 +63,7 @@ return {
     config = function()
       require("go").setup {
         tag_transform = "camelcase", -- "snakecase"
-        icons = { breakpoint = "🔴", currentpos = "➡️" },
+        icons = { breakpoint = "🔴", currentpos = "" },
       }
     end,
     event = { "CmdlineEnter" },

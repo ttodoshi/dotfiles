@@ -9,10 +9,20 @@ M.ui = {
   nvdash = {
     load_on_startup = true,
   },
+  hl_override = {
+    NvDashAscii = {
+      bg = "none",
+      fg = "blue",
+    },
+    NvDashButtons = {
+      bg = "none",
+      fg = "#F9F9F9",
+    },
+  },
   tabufline = {
     order = { "treeOffset", "buffers", "tabs" },
   },
-  transparency = true
+  transparency = true,
 
   -- hl_override = {
   -- 	Comment = { italic = true },
