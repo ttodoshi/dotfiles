@@ -90,7 +90,7 @@
 	"custom/notifications": {
 		"format": "󰎟 ",
 		"tooltip-format": "Notifications",
-		"on-click": "makoctl history | jq -r '.data[][] | .summary.data + \" \" + .body.data' | wofi --dmenu"
+    "on-click": "makoctl history | jq -r '.data[][] | \"<big>\" + .\"app-name\".data + \"</big>\r\" + \"<b>\" + .summary.data + \"</b>\r\" + .body.data' | wofi --dmenu --allow-markup"
 	},
 	"pulseaudio": {
 		"scroll-step": 5,

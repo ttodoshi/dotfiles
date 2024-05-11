@@ -7,6 +7,8 @@ local map = vim.keymap.set
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 map("n", "U", ":redo <cr>", { desc = "Redo (like Ctrl+Shift+Z in ide's)" })
+map("n", "d", '"_d', { desc = "Delete without copy" })
+map("v", "d", '"_d', { desc = "Delete without copy" })
 
 -- debug
 map("n", "<leader>db", ":GoDebug -b <cr>", { desc = "Toggle breakpoint" })
