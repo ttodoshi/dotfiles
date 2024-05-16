@@ -22,6 +22,7 @@ return {
         "lua-language-server",
         "jdtls",
         "sqlls",
+        "pyright",
         -- dap
         "delve",
         -- lint
@@ -54,6 +55,7 @@ return {
     dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio", "theHamsta/nvim-dap-virtual-text" },
   },
   {
+    -- go install github.com/fatih/gomodifytags@latest
     "ray-x/go.nvim",
     dependencies = {
       "ray-x/guihua.lua",
