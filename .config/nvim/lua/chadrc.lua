@@ -4,11 +4,12 @@
 ---@type ChadrcConfig
 local M = {}
 
-M.ui = {
+M.base46 = {
   theme = "material-darker",
-  nvdash = {
-    load_on_startup = true,
-  },
+  transparency = true,
+}
+
+M.ui = {
   hl_override = {
     NvDashAscii = {
       bg = "none",
@@ -22,12 +23,8 @@ M.ui = {
   tabufline = {
     order = { "treeOffset", "buffers", "tabs" },
   },
-  transparency = true,
-
-  -- hl_override = {
-  -- 	Comment = { italic = true },
-  -- 	["@comment"] = { italic = true },
-  -- },
 }
+
+M.nvdash = { load_on_startup = true }
 
 return M
