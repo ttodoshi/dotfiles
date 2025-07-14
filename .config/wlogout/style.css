@@ -3,7 +3,7 @@
     font-size: 25px;
 }
 
-@import "../waybar/theme.css";
+@import "../waybar/colors.css";
 
 
 window {
@@ -24,11 +24,6 @@ button {
     text-shadow: none;
     animation: gradient_f 20s ease-in infinite;
 }
-
-/* button:focus {
-    background-color: @gr;
-    background-size: 20%;
-} */
 
 button:hover {
     background-color: @hover;
