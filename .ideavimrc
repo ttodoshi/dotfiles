@@ -1,0 +1,35 @@
+" Normal Mode
+imap jj <Esc>
+imap оо <Esc>
+
+" Вкладки
+nnoremap H :action PreviousTab<CR>
+nnoremap L :action NextTab<CR>
+nnoremap ; $
+
+" Навигация
+noremap р h
+noremap о j
+noremap л k
+noremap д l
+
+" Переход в Insert mode
+noremap ш i
+noremap ф a
+noremap щ o
+noremap Ы O
+
+" Другие полезные
+noremap ч x
+noremap в d
+noremap с c
+noremap н y
+noremap г u
+noremap з p
+noremap м v
+noremap М V
+noremap п g
+noremap ц w
+noremap и b
+noremap Ц W
+noremap И B
