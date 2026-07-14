@@ -2,6 +2,14 @@
 imap jj <Esc>
 imap оо <Esc>
 
+" Deletion
+nnoremap d "_d
+nnoremap dd "_dd
+nnoremap D "_D
+
+" Pasting
+xnoremap p "_dP
+
 " Вкладки
 nnoremap H :action PreviousTab<CR>
 nnoremap L :action NextTab<CR>
