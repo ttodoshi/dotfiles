@@ -10,24 +10,24 @@ nnoremap D "_D
 " Pasting
 xnoremap p "_dP
 
-" Вкладки
+" Tabs
 nnoremap H :action PreviousTab<CR>
 nnoremap L :action NextTab<CR>
 nnoremap ; $
 
-" Навигация
+" Navagation
 noremap р h
 noremap о j
 noremap л k
 noremap д l
 
-" Переход в Insert mode
+" Insert mode
 noremap ш i
 noremap ф a
 noremap щ o
 noremap Ы O
 
-" Другие полезные
+" Useful
 noremap ч x
 noremap в d
 noremap с c
@@ -41,3 +41,7 @@ noremap ц w
 noremap и b
 noremap Ц W
 noremap И B
+
+" Disable sounds
+set visualbell
+set noerrorbells
